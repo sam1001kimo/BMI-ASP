@@ -28,17 +28,17 @@ namespace BMI_homework
 
             if (BMI > 25)
             {
-                lbl1.Text = "過重，該減肥囉!!";
+                lbl1.Text = "BMI:"+BMI.ToString()+"<br/>過重，該減肥囉!!";
                 lbl1.Attributes["style"] = "color:red";
             }
             else if (BMI < 20)
             {
-                lbl1.Text = "過輕，多吃點!!";
+                lbl1.Text = "BMI:" + BMI.ToString() + "<br/>過輕，多吃點!!";
                 lbl1.Attributes["style"] = "color:yellow";
             }
             else
             {
-                lbl1.Text = "恭喜你，BMI很正常，請保持!!";
+                lbl1.Text = "BMI:" + BMI.ToString() + "<br/>恭喜你，很正常，請保持!!";
                 lbl1.Attributes["style"] = "color:green";
             }
             lbl1.Visible = true;
